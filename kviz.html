@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
   <title>Kvíz</title>
   <style>
     body {
@@ -46,41 +49,40 @@
     }
   </style>
 </head>
-  
+
 <body>
-  
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <a class="navbar-brand" href="index.html">
-                    <img src="logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
-                </a>
-                <li class="nav-item">
-                    <a class="nav-link" href="tortenet.html">Történet</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="jatekosok.html">Játékosok</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kviz.html">Kvíz</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-  
-<div id="quiz-container">
-  <h2>Mit tudsz a magyar válogatottról?</h2>
-  <div class="question" id="question1">
-    <p>1. Ki a magyar válogatott jelenlegi kapitánya?</p>
-    <div class="options">
-      <div class="option"><input type="radio" name="q1" value="a"> Marco Rossi</div>
-      <div class="option"><input type="radio" name="q1" value="b"> Pintér Attila</div>
-      <div class="option"><input type="radio" name="q1" value="c"> Zoltán Gera</div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+        </a>
+        <li class="nav-item">
+          <a class="nav-link" href="tortenet.html">Történet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jatekosok.html">Játékosok</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kviz.html">Kvíz</a>
+        </li>
+      </ul>
     </div>
-  </div
-    
-  <div class="question" id="question2">
+  </nav>
+
+  <div id="quiz-container">
+    <h2>Mit tudsz a magyar válogatottról?</h2>
+    <div class="question" id="question1">
+      <p>1. Ki a magyar válogatott jelenlegi kapitánya?</p>
+      <div class="options">
+        <div class="option"><input type="radio" name="q1" value="a"> Marco Rossi</div>
+        <div class="option"><input type="radio" name="q1" value="b"> Pintér Attila</div>
+        <div class="option"><input type="radio" name="q1" value="c"> Zoltán Gera</div>
+      </div>
+    </div> 
+    <div class="question" id="question2">
     <p>2. Ki a magyar válogatott történetének legeredményesebb gólszerzője?</p>
     <div class="options">
       <div class="option"><input type="radio" name="q2" value="a"> Czibor Zoltán</div>
@@ -101,35 +103,36 @@
   <button onclick="submitQuiz()">Submit Answers</button>
   <div id="result"></div>
   <img src="valogatott.jpg" alt="válogatott" height="300px">
-</div>
+  </div>
 
-<script>
-  function submitQuiz() {
-    var score = 0;
+  <script>
+    function submitQuiz() {
+      var score = 0;
 
-    // Question 1
-    var q1Answer = document.querySelector('input[name="q1"]:checked');
-    if (q1Answer && q1Answer.value === "a") {
-      score++;
+      // Question 1
+      var q1Answer = document.querySelector('input[name="q1"]:checked');
+      if (q1Answer && q1Answer.value === "a") {
+        score++;
+      }
+
+      // Question 2
+      var q2Answer = document.querySelector('input[name="q2"]:checked');
+      if (q2Answer && q2Answer.value === "b") {
+        score++;
+      }
+
+      // Question 3
+      var q3Answer = document.querySelector('input[name="q3"]:checked');
+      if (q3Answer && q3Answer.value === "c") {
+        score++;
+      }
+
+      // Display result
+      var resultContainer = document.getElementById('result');
+      resultContainer.innerHTML = "Your score: " + score + " a 3-ból";
     }
-
-    // Question 2
-    var q2Answer = document.querySelector('input[name="q2"]:checked');
-    if (q2Answer && q2Answer.value === "b") {
-      score++;
-    }
-
-    // Question 3
-    var q3Answer = document.querySelector('input[name="q3"]:checked');
-    if (q3Answer && q3Answer.value === "c") {
-      score++;
-    }
-
-    // Display result
-    var resultContainer = document.getElementById('result');
-    resultContainer.innerHTML = "Your score: " + score + " a 3-ból";
-  }
-</script>
+  </script>
 
 </body>
+
 </html>
