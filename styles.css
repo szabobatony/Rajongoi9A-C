@@ -6,8 +6,12 @@ body {
     line-height: 2;
 }
 
-.szoveg h2{
+.szoveg h1{
     text-align: center;
+}
+
+.szoveg h2{
+    text-align: left;
 }
 
 .fejlec{
