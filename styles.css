@@ -24,3 +24,15 @@ body {
     font-weight: bold;
     color: crimson;
 }
+
+h2{
+    color: white;
+}
+
+hr{
+    color: white;
+}
+
+.card {
+    border-radius: 25px;
+}
