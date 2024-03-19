@@ -81,6 +81,7 @@
         <div class="option"><input type="radio" name="q1" value="c"> Zoltán Gera</div>
       </div>
     </div> 
+
     <div class="question" id="question2">
     <p>2. Ki a magyar válogatott történetének legeredményesebb gólszerzője?</p>
     <div class="options">
@@ -96,6 +97,15 @@
       <div class="option"><input type="radio" name="q3" value="a"> Balázs Dzsudzsák</div>
       <div class="option"><input type="radio" name="q3" value="b"> Gera Zoltán</div>
       <div class="option"><input type="radio" name="q3" value="c"> Király Gábor</div>
+    </div>
+  </div>
+
+  <div class="question" id="question4">
+    <p>4. Ki a magyar válogatott jelenlegi csapatkapitánya?</p>
+    <div class="options">
+      <div class="option"><input type="radio" name="q4" value="a"> Gulácsi Péter</div>
+      <div class="option"><input type="radio" name="q4" value="b"> Nagy Ádám</div>
+      <div class="option"><input type="radio" name="q4" value="c"> Szoboszlai Dominik</div>
     </div>
   </div>
 
@@ -126,9 +136,16 @@
         score++;
       }
 
+
+      // Question 4
+      var q3Answer = document.querySelector('input[name="q4"]:checked');
+      if (q3Answer && q3Answer.value === "c") {
+        score++;
+      }
+
       // Display result
       var resultContainer = document.getElementById('result');
-      resultContainer.innerHTML = "Your score: " + score + " a 3-ból";
+      resultContainer.innerHTML = "Your score: " + score + " a 4-ből";
     }
   </script>
 
