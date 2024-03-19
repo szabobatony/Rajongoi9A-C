@@ -109,6 +109,24 @@
     </div>
   </div>
 
+  <div class="question" id="question4">
+    <p>5. Kinek van a legtöbb válogatottsága a jelenlegi válogatottban?</p>
+    <div class="options">
+      <div class="option"><input type="radio" name="q5" value="a"> Kalmár Zsolt</div>
+      <div class="option"><input type="radio" name="q5" value="b"> Nagy Ádám</div>
+      <div class="option"><input type="radio" name="q5" value="c"> Gulácsi Péter</div>
+    </div>
+  </div>
+
+  <div class="question" id="question4">
+    <p>6. Ki tudott triplázni az anglia elleni 6:3-ra megnyert meccsen?</p>
+    <div class="options">
+      <div class="option"><input type="radio" name="q6" value="a"> Puskás Ferenc</div>
+      <div class="option"><input type="radio" name="q6" value="b"> Bozsik József</div>
+      <div class="option"><input type="radio" name="q6" value="c"> Hidegkuti Nándor</div>
+    </div>
+  </div>
+
   <button onclick="submitQuiz()">Submit Answers</button>
   <div id="result"></div>
   <img src="valogatott.jpg" alt="válogatott" height="300px">
@@ -143,9 +161,21 @@
         score++;
       }
 
+      // Question 5
+      var q3Answer = document.querySelector('input[name="q5"]:checked');
+      if (q3Answer && q3Answer.value === "b") {
+        score++;
+      }
+
+      // Question 6
+      var q3Answer = document.querySelector('input[name="q6"]:checked');
+      if (q3Answer && q3Answer.value === "c") {
+        score++;
+      }
+
       // Display result
       var resultContainer = document.getElementById('result');
-      resultContainer.innerHTML = "Your score: " + score + " a 4-ből";
+      resultContainer.innerHTML = "Your score: " + score + " a 6-ból";
     }
   </script>
 
