@@ -2,6 +2,14 @@ body {
     background-image: url(abstract-seamless-pattern-small-rings-pixels-red-colors_444390-1970.avif);
 }
 
+ul{
+    list-style-type: circle;
+}
+
+strong{
+    color: darkred;
+}
+
 .szoveg{
     line-height: 2;
 }
@@ -21,6 +29,10 @@ body {
 .kepek{
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.center{
+    margin-left: 200px;
 }
 
 .jelen{
