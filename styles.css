@@ -52,3 +52,12 @@ hr{
 .card {
     border-radius: 25px;
 }
+
+.lablec{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    margin-top: 100px;
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+}
