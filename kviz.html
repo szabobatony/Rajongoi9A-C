@@ -109,7 +109,7 @@
     </div>
   </div>
 
-  <div class="question" id="question4">
+  <div class="question" id="question5">
     <p>5. Kinek van a legtöbb válogatottsága a jelenlegi válogatottban?</p>
     <div class="options">
       <div class="option"><input type="radio" name="q5" value="a"> Kalmár Zsolt</div>
@@ -118,12 +118,21 @@
     </div>
   </div>
 
-  <div class="question" id="question4">
+  <div class="question" id="question6">
     <p>6. Ki tudott triplázni az anglia elleni 6:3-ra megnyert meccsen?</p>
     <div class="options">
       <div class="option"><input type="radio" name="q6" value="a"> Puskás Ferenc</div>
       <div class="option"><input type="radio" name="q6" value="b"> Bozsik József</div>
       <div class="option"><input type="radio" name="q6" value="c"> Hidegkuti Nándor</div>
+    </div>
+  </div>
+
+  <div class="question" id="question6">
+    <p>7. Mikor alapult meg a magyar labdarúgó válogatott?</p>
+    <div class="options">
+      <div class="option"><input type="radio" name="q6" value="a"> 1902</div>
+      <div class="option"><input type="radio" name="q6" value="b"> 1900</div>
+      <div class="option"><input type="radio" name="q6" value="c"> 1916</div>
     </div>
   </div>
 
@@ -173,9 +182,15 @@
         score++;
       }
 
+       // Question 7
+       var q3Answer = document.querySelector('input[name="q6"]:checked');
+      if (q3Answer && q3Answer.value === "a") {
+        score++;
+      }
+
       // Display result
       var resultContainer = document.getElementById('result');
-      resultContainer.innerHTML = "Your score: " + score + " a 6-ból";
+      resultContainer.innerHTML = "Your score: " + score + " a 7-ból";
     }
   </script>
 <div class="lablec">© Egy projekt Skulec Dávid, Szalay Gergő és Szabó Bátony részvételével</div>
