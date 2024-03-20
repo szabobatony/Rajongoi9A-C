@@ -130,12 +130,12 @@
     </div>
   </div>
 
-  <div class="question" id="question6">
+  <div class="question" id="question7">
     <p>7. Mikor alapult meg a magyar labdarúgó válogatott?</p>
     <div class="options">
-      <div class="option"><input type="radio" name="q6" value="a"> 1902</div>
-      <div class="option"><input type="radio" name="q6" value="b"> 1900</div>
-      <div class="option"><input type="radio" name="q6" value="c"> 1916</div>
+      <div class="option"><input type="radio" name="q7" value="a" id="19"> <label for="19">1902</label></div>
+      <div class="option"><input type="radio" name="q7" value="b" id="20"> <label for="20">1925</label></div>
+      <div class="option"><input type="radio" name="q7" value="c" id="21"> <label for="21">1909</label></div>
     </div>
   </div>
 
@@ -186,7 +186,7 @@
       }
 
        // Question 7
-       var q3Answer = document.querySelector('input[name="q6"]:checked');
+       var q3Answer = document.querySelector('input[name="q7"]:checked');
       if (q3Answer && q3Answer.value === "a") {
         score++;
       }
