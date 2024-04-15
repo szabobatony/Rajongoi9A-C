@@ -138,6 +138,33 @@
     </div>
   </div>
 
+  <div class="question" id="question8">
+    <p>8. Melyik évben nyerte meg utoljára a magyar válogatott a labdarúgó Európa-bajnokságot (EB)?</p>
+    <div class="options">
+      <div class="option"><input type="radio" name="q8" value="a" id="22"> <label for="22">1964</label></div>
+      <div class="option"><input type="radio" name="q8" value="b" id="23"> <label for="23">1972</label></div>
+      <div class="option"><input type="radio" name="q8" value="c" id="24"> <label for="24">1980</label></div>
+    </div>
+  </div>
+
+  <div class="question" id="question9">
+    <p>9. Ki volt a magyar válogatott kapitánya az 1954-es svájci labdarúgó-világbajnokságon?</p>
+    <div class="options">
+      <div class="option"><input type="radio" name="q9" value="a" id="25"> <label for="25">Gyula Grosics</label></div>
+      <div class="option"><input type="radio" name="q9" value="b" id="26"> <label for="26">Lajos Tichy</label></div>
+      <div class="option"><input type="radio" name="q9" value="c" id="27"> <label for="27">Ferenc Puskás</label></div>
+    </div>
+  </div>
+
+  <div class="question" id="question10">
+    <p>10. Ki volt a magyar válogatott legfiatalabb játékosa az 1954-es svájci labdarúgó-világbajnokságon?</p>
+    <div class="options">
+      <div class="option"><input type="radio" name="q10" value="a" id="28"> <label for="28">Sándor Kocsis</label></div>
+      <div class="option"><input type="radio" name="q10" value="b" id="29"> <label for="29">Ferenc Puskás</label></div>
+      <div class="option"><input type="radio" name="q10" value="c" id="30"> <label for="30">Vilmos Kohut</label></div>
+    </div>
+  </div>
+
   <button onclick="submitQuiz()">Submit Answers</button>
   <div id="result"></div>
   <div class="row"><img alt="valami" src="képek/9Kvíz/hatter.jpg" height="300"></div>
@@ -151,48 +178,85 @@
       var q1Answer = document.querySelector('input[name="q1"]:checked');
       if (q1Answer && q1Answer.value === "a") {
         score++;
-      }
+      } else {
+     document.querySelector('input[name="q1"][value="a"]').parentNode.classList.add('correct');
+     }
 
       // Question 2
       var q2Answer = document.querySelector('input[name="q2"]:checked');
       if (q2Answer && q2Answer.value === "b") {
         score++;
-      }
+      } else {
+     document.querySelector('input[name="q2"][value="b"]').parentNode.classList.add('correct');
+     }
 
       // Question 3
       var q3Answer = document.querySelector('input[name="q3"]:checked');
       if (q3Answer && q3Answer.value === "c") {
         score++;
-      }
-
+      } else {
+     document.querySelector('input[name="q3"][value="c"]').parentNode.classList.add('correct');
+     }
 
       // Question 4
       var q3Answer = document.querySelector('input[name="q4"]:checked');
       if (q3Answer && q3Answer.value === "c") {
         score++;
-      }
+      } else {
+     document.querySelector('input[name="q4"][value="c"]').parentNode.classList.add('correct');
+     }
 
       // Question 5
       var q3Answer = document.querySelector('input[name="q5"]:checked');
       if (q3Answer && q3Answer.value === "b") {
         score++;
-      }
+      } else {
+     document.querySelector('input[name="q5"][value="b"]').parentNode.classList.add('correct');
+     }
 
       // Question 6
       var q3Answer = document.querySelector('input[name="q6"]:checked');
       if (q3Answer && q3Answer.value === "c") {
         score++;
-      }
+      } else {
+     document.querySelector('input[name="q6"][value="c"]').parentNode.classList.add('correct');
+     }
 
        // Question 7
        var q3Answer = document.querySelector('input[name="q7"]:checked');
       if (q3Answer && q3Answer.value === "a") {
         score++;
-      }
+      } else {
+     document.querySelector('input[name="q7"][value="a"]').parentNode.classList.add('correct');
+     }
+
+      // Question 8
+      var q3Answer = document.querySelector('input[name="q8"]:checked');
+      if (q3Answer && q3Answer.value === "a") {
+        score++;
+      } else {
+     document.querySelector('input[name="q8"][value="a"]').parentNode.classList.add('correct');
+     }
+
+      // Question 9
+      var q3Answer = document.querySelector('input[name="q9"]:checked');
+      if (q3Answer && q3Answer.value === "a") {
+        score++;
+      } else {
+     document.querySelector('input[name="q9"][value="a"]').parentNode.classList.add('correct');
+     }
+
+      // Question 10
+      var q3Answer = document.querySelector('input[name="q10"]:checked');
+      if (q3Answer && q3Answer.value === "a") {
+        score++;
+      } else {
+     document.querySelector('input[name="q10"][value="a"]').parentNode.classList.add('correct');
+     }
 
       // Display result
       var resultContainer = document.getElementById('result');
-      resultContainer.innerHTML = "Your score: " + score + " a 7-ból";
+      resultContainer.innerHTML = "Your score: " + score + " a 10-ből";
     }
   </script>
 

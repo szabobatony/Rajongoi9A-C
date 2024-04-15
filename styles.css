@@ -1,4 +1,4 @@
-body {
+body{
     background-image: url(képek/8Háttér/abstract-seamless-pattern-small-rings-pixels-red-colors_444390-1970.avif);
 }
 
@@ -62,4 +62,8 @@ hr{
     padding: 10px;
     font-size: small;
     text-align: center;
+}
+
+.correct{
+    color: red;
 }
