@@ -62,3 +62,7 @@ hr{
     font-size: small;
     text-align: center;
 }
+
+.correct{
+    color: red;
+}
