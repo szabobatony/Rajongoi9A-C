@@ -6,8 +6,9 @@ ul{
     list-style-type: circle;
 }
 
-strong{
+.kiemelt{
     color: darkred;
+    font-weight: bold;
 }
 
 .szoveg{
